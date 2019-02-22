@@ -23,6 +23,20 @@ const authReducer = (state = initState, action) => {
             console.log('signoued outtt')
             return state
         
+        case 'SIGNUP_SUCCESS':
+            console.log('SIGNED UPPP')
+            return{
+                ...state,
+                authError: null
+            }
+        
+        case 'SIGNUP_ERROR':
+            console.log('SIGNUP ERRR')
+            return{
+                ...state,
+                authError: action.err.message
+            }
+        
         default:
             return state
 
