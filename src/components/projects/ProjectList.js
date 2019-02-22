@@ -4,12 +4,8 @@ import {Link} from 'react-router-dom'
 
 const ProjectList = ({projects}) => {
 
-    
-
     return(
         <section className="section project-list">
-           {/* <ProjectSummary /> */}
-
            {projects && projects.map(project => {
                return(
                 <Link to={'/project/' + project.id} key={project.id}>
