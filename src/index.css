@@ -11,12 +11,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: url(/img/pattern.jpg);
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background: url(/img/pattern.jpg); */
+  /* background-position: bottom; */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+
   min-height: 100%;
   background-color: rgb(240, 240, 240);
+}
+
+#App{
+  margin:0;
+  padding:0
 }
 
 form{
@@ -32,3 +38,27 @@ form button, form h5{
   padding-left: 0.5rem
 }
 
+#dashboard{
+  background: linear-gradient(#3f87a6, #ececec);
+}
+
+#createProject{
+  background: linear-gradient(#8df7bd, rgb(240,240,240));
+  padding: 1rem;
+  min-height: 80vh;
+}
+
+#signIn{
+  /* background: linear-gradient(#8df7bd, rgb(240,240,240)); */
+  padding: 1rem;
+  min-height: 80vh;
+  background: url(/img/pattern.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer{
+  /* min-height: 30vh; */
+
+}

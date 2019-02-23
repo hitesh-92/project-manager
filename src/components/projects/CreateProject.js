@@ -32,29 +32,33 @@ class CreateProject extends Component {
         if (!auth.uid) return <Redirect to="/signin"/>
 
     return (
-      <div className="container">
-          <form className="white" onSubmit={this.handleSubmit}>
+    <section id="createProject">
+        <div className="container" >
 
-            <h5 className="grey-text text-darken-3">Create New Project</h5>
+            <form className="white" onSubmit={this.handleSubmit}>
 
-            <div className="input-field">
-                <label htmlFor="title">Title</label>
-                <input type="text" id="title" onChange={this.handleChange} />
-            </div>
+                <h5 className="grey-text text-darken-3">Create New Project</h5>
 
-            <div className="input-field">
-                <label htmlFor="password">Desciption</label>
-                <textarea id="content" cols="30" rows="10" className="materialize-textarea" onChange={this.handleChange}></textarea>
-            </div>
+                <div className="input-field">
+                    <label htmlFor="title">Title</label>
+                    <input type="text" id="title" onChange={this.handleChange} />
+                </div>
 
-            <div className="input-field">
-                <button className="btn waves-effect waves-light">Create
-                    <i className="material-icons right">send</i>
-                </button>
-            </div>
+                <div className="input-field">
+                    <label htmlFor="password">Desciption</label>
+                    <textarea id="content" cols="30" rows="10" className="materialize-textarea" onChange={this.handleChange}></textarea>
+                </div>
 
-          </form>
-      </div>
+                <div className="input-field">
+                    <button className="btn waves-effect waves-light">Create
+                        <i className="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
     )
   }
 }

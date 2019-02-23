@@ -15,7 +15,7 @@ class Dashboard extends Component {
         if (!auth.uid) return <Redirect to="/signin"/>
 
         return(
-            <div className="container dashboard">
+            <div className="dashboard" id="dashboard">
                  <div className="row">
                     <div className="col sm12 m6">
                         <Notifications notifications={notifications} />
@@ -47,7 +47,7 @@ export default compose(
         },
         { 
             collection:'notifications',
-            limit: 3,
+            limit: 5,
             orderBy: ['time', 'desc']
         }
     ])
