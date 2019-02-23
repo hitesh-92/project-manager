@@ -12,7 +12,7 @@ const ProjectSummary = ({project}) => {
                         <span className="blue-text text-lighten-3">
                             {project.authorFirstName[0]}. {project.authorLastName}
                         </span>
-                        <span> | </span>
+                        <span className="grey-text text-lighten-2"> - </span>
                         <span className="grey-text text-lighten-1">
                             {moment(project.createdAt.toDate()).calendar()}
                         </span>
