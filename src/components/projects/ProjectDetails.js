@@ -14,16 +14,24 @@ const ProjectDetails = (props) => {
 
     return (
       <div className="section project-details container">
-        <div className="card z-depth-2">
+        <p className="blue-grey-text text-darken-1">Project Details</p>
+        <div className="card z-depth-0">
           <div className="card-content">
               <span className="card-title">{project.title}</span>
-              <p className="grey-text">{project.content}</p>
+              <blockquote>{project.content}</blockquote>
+
             <small className="grey-text text-lighten-1">
-              <span>Posted by {project.authorFirstName[0]}. {project.authorLastName}</span> |
-              <span> {moment(project.createdAt.toDate()).calendar()}</span>
+              <span>Posted by {project.authorFirstName[0]}. {project.authorLastName}</span>
+              <span className="right"> {moment(project.createdAt.toDate()).calendar()}</span>
             </small>
+
           </div>
         </div>
+
+        <section>
+          <p>Add in more project info heree</p>
+        </section>
+
       </div>
     )
   }

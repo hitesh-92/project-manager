@@ -28,11 +28,11 @@ const Messages = (props) => {
                                     >
                                     <span className="blue-text text-darken-4">{item.message}</span>
                                     <div>
-                                    <small className="grey-text text-lighten-2">
+                                    <small className="grey-text">
                                         {item.authorFirstName[0]}. {item.authorLastName}
                                     </small>
                                     <span className="grey-text text-lighten-2"> - </span>
-                                    <span>
+                                    <span className="grey-text">
                                         <small>{moment(item.createdAt.toDate()).fromNow()}</small>
                                     </span>
                                     </div>

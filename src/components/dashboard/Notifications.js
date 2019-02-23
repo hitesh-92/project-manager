@@ -14,13 +14,16 @@ const Notifications = (props) => {
                         {notifications && notifications.map(item => {
                             return(
                                 <li key={item.id} className="collection-item">
-
+                                    
+                                    <div>
                                     <span className="blue-text">{item.user}</span>
-                                    <span> {item.content}</span>
-                                    <span className="grey-text text-lighten-2"> - </span>
-                                    <span className="grey-text note-date">
-                                        {moment(item.time.toDate()).fromNow()}
+                                    {/* <span className="grey-text text-lighten-2"> - </span> */}
+                                    <span className="grey-text note-date right">
+                                        <small>{moment(item.time.toDate()).fromNow()}</small>
                                     </span>
+                                    </div>
+
+                                    <span> {item.content}</span>
                                 </li>
                             )
                         })}
