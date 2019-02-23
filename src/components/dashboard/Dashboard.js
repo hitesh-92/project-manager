@@ -53,8 +53,8 @@ export default compose(
         },
         {
             collection:'messages',
-            // limit: 7,
-            // orderBy: ['createdAt', 'desc']
+            limit: 10,
+            orderBy: ['createdAt', 'desc']
         }
     ])
 )(Dashboard)

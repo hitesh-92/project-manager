@@ -5,8 +5,6 @@ import "materialize-css/dist/css/materialize.min.css";
 
 import {connect} from 'react-redux'
 import {addMessage} from '../../../store/actions/messageActions'
-// import {firestoreConnect} from 'react-redux-firebase'
-// import {compose} from 'redux'
 
 
 class Modal extends Component {
@@ -21,14 +19,9 @@ class Modal extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     const hasInput = this.state.message.length > 3;
-
     if(!hasInput) return
-
     this.props.addMessage(this.state)
-    // this.props.history.push('/')
-
   }
 
   componentDidMount() {
@@ -56,8 +49,6 @@ class Modal extends Component {
   }
 
   render() {
-
-    // const {auth} = this.props
 
     return (
       <section>
