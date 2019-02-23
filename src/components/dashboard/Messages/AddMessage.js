@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Modal from './Modal'
 
 class AddMessage extends Component{
     
@@ -6,7 +7,9 @@ class AddMessage extends Component{
         message: ''
     }
  
-    
+    handleClick = (e) => {
+
+    }
 
 
     render(){
@@ -14,13 +17,13 @@ class AddMessage extends Component{
         return(
 
             <section>
-                <button 
-                    className="right btn-floating btn-small waves-effect waves-light green"
+                {/* <button 
+                    className="pulse right btn-floating btn-small waves-effect waves-light green"
                     onClick={this.handleClick}
                 >
                 <i className="material-icons">add</i>
-                </button>
-                          
+                </button> */}
+                <Modal />
             </section>
 
         )

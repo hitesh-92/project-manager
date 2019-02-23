@@ -11,25 +11,21 @@ const ProjectDetails = (props) => {
   if (!auth.uid) return <Redirect to="/signin"/>
 
   if(project){
-    console.log(project)
+
     return (
-        <div className="container section project-details">
-
-          <div className="card z-depth-0">
-              <div className="card-content">
-                  <span className="card-title">{project.title}</span>
-                  <p>{project.content}</p>
-              </div>
-              <div className="card-action grey lighten-4">
-                  <div><small>
-                  <span>Posted by {project.authorFirstName[0]}. {project.authorLastName}</span> |
-                  <span> {moment(project.createdAt.toDate()).calendar()}</span>
-                  </small></div>
-              </div>
+      <div className="section project-details container">
+        <div className="card z-depth-2">
+          <div className="card-content">
+              <span className="card-title">{project.title}</span>
+              <p className="grey-text">{project.content}</p>
+            <small className="grey-text text-lighten-1">
+              <span>Posted by {project.authorFirstName[0]}. {project.authorLastName}</span> |
+              <span> {moment(project.createdAt.toDate()).calendar()}</span>
+            </small>
           </div>
-
         </div>
-      )
+      </div>
+    )
   }
   else {
     return(
