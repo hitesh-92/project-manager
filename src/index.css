@@ -48,8 +48,7 @@ form button, form h5{
   min-height: 80vh;
 }
 
-#signIn{
-  /* background: linear-gradient(#8df7bd, rgb(240,240,240)); */
+#signIn, #signUp{
   padding: 1rem;
   min-height: 80vh;
   background: url(/img/pattern.jpg);
@@ -58,7 +57,10 @@ form button, form h5{
   background-repeat: no-repeat;
 }
 
-#footer{
-  /* min-height: 30vh; */
+#footer a:hover{
+  color: rgb(0, 195, 255)
+}
 
+#footer .right-content{
+  padding-right: 0.5rem;
 }
