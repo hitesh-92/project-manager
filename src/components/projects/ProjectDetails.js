@@ -60,5 +60,3 @@ export default compose(
   connect(mapStateToProps),
   firestoreConnect([{collection:'rpojects'}])
 )(ProjectDetails)
-
-// export default ProjectDetails
