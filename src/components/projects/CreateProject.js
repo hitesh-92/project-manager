@@ -33,7 +33,7 @@ class CreateProject extends Component {
 
     return (
     <section id="createProject">
-        <div className="container" >
+        <div className="container">
 
             <form className="white" onSubmit={this.handleSubmit}>
 

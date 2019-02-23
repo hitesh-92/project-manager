@@ -1,5 +1,5 @@
 import React from 'react'
-import AddMessage from './AddMessage'
+import Modal from './Modal'
 
 const Messages = (props) => {
     return(
@@ -13,12 +13,7 @@ const Messages = (props) => {
                         </div>
 
                         <div className="col s6">
-                            {/* <button className="right btn-floating btn-small waves-effect waves-light green"
-                                onClick={handleClick}
-                            >
-                                <i className="material-icons">add</i>
-                            </button> */}
-                            <AddMessage />
+                            <Modal />
                         </div>
                     </div>
                     <div>

@@ -8,6 +8,15 @@ class Modal extends Component {
     message: ''
   }
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state)
+  }
+
+  handleChange = (e) => {
+    this.setState({ message: e.target.value })
+  }
+
   componentDidMount() {
     const options = {
       onOpenStart: () => {
@@ -33,11 +42,13 @@ class Modal extends Component {
   }
 
   render() {
+
     return (
-      <>
+      <section>
         <a
           className="pulse right btn-floating btn-small waves-effect waves-light green modal-trigger"
           data-target="modal1"
+          href="#!"
         >
         <i className="material-icons">add</i>
         </a>
@@ -50,11 +61,36 @@ class Modal extends Component {
           className="modal"
         >
           <div className="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-          </div>
-          <div className="modal-footer">
 
+            <form className="" onSubmit={this.handleSubmit}>
+
+              <h5 className="green-text text-darken-3">Post Message</h5>
+
+              {/* <div className="input-field">
+                <label htmlFor="title">Message</label>
+                <input 
+                  type="text" 
+                  id="message" 
+                  onChange={this.handleChange} 
+                  className="blue-grey-text "
+                />
+              </div> */}
+
+              {/* <div className="input-field"> */}
+                <textarea name="" id=""></textarea>
+              {/* </div> */}
+
+              <div className="input-field">
+                  <button className="btn waves-effect waves-light modal-close green white-text">
+                    Send
+                  </button>
+              </div>
+
+            </form>
+
+          </div>
+
+          {/* <div className="modal-footer"> */}
             {/* <a href="#" className="modal-close waves-effect waves-red btn-flat">
               Disagree
             </a>
@@ -62,11 +98,12 @@ class Modal extends Component {
               Agree
             </a> */}
 
-            <a href="#" className="modal-close waves-effect waves-green btn-flat green lighten-1 white-text">Send</a>
+            {/* <a href="#!" className="modal-close waves-effect waves-green btn-flat green lighten-1 white-text">Send</a> */}
 
-          </div>
+          {/* </div> */}
+
         </div>
-      </>
+      </section>
     );
   }
 }

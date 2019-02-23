@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="white-text">Footer Content</h5>
+                <h5 className="white-text">Project Management made easy</h5>
                 <p className="grey-text text-lighten-4">You can easily organise your team projects</p>
                 <p className="grey-text text-lighten-4">Send tips for extra features</p>
               </div>
