@@ -10,10 +10,10 @@ const Notifications = (props) => {
             <div className="card z-depth-0">
                 <div className="card-content">
                     <span className="card-title">Notifications</span>
-                    <ul className="notifications">
+                    <ul className="notifications collection">
                         {notifications && notifications.map(item => {
                             return(
-                                <li key={item.id}>
+                                <li key={item.id} className="collection-item">
                                     <span className="blue-text">{item.user}</span>
                                     <span> {item.content}</span>
                                     <div className="grey-text note-date">

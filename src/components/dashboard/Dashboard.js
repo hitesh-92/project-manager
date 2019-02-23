@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Notifications from './Notifications'
 import ProjectList from '../projects/ProjectList'
+import Messages from './Messages/Messages'
 import {connect} from 'react-redux'
 import {firestoreConnect} from 'react-redux-firebase'
 import {compose} from 'redux'
@@ -15,15 +16,16 @@ class Dashboard extends Component {
 
         return(
             <div className="container dashboard">
-                <div className="row">
+                 <div className="row">
+                    <div className="col sm12 m6">
+                        <Notifications notifications={notifications} />
+                        <Messages />
+                    </div>
                     <div className="col sm12 m6">
                         <ProjectList projects={projects} />
                     </div>
-                    <div className="col sm12 m6">
-                        <Notifications notifications={notifications} />
-                    </div>
-                </div>
-            </div>
+                 </div>
+             </div>
         )
     }
 }

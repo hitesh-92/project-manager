@@ -16,8 +16,14 @@ class CreateProject extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+
+        let hasInput = this.state.title.length > 1 && this.state.content.length > 1
+
+        if(!hasInput) return;
+
         this.props.createProject(this.state)
         this.props.history.push('/')
+        
     }
 
     render() {
@@ -42,8 +48,8 @@ class CreateProject extends Component {
             </div>
 
             <div className="input-field">
-                <button className="btn green lighten-1">
-                    Create
+                <button className="btn waves-effect waves-light">Create
+                    <i className="material-icons right">send</i>
                 </button>
             </div>
 

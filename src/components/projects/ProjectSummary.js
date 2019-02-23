@@ -3,15 +3,21 @@ import moment from 'moment'
 
 const ProjectSummary = ({project}) => {
     return(
-        <div className="project-list section">
-            <div className="card z-depth-0 project-summary">
-                <div className="card-content grey-text">
+        <div className="project-list">
+            <div className="card z-depth-1 project-summary">
+                <div className="card-content grey-text text-darken-1">
                     
                     <span className="card-title">{project.title}</span>
-                    <p>Post by {project.authorFirstName[0]}. {project.authorLastName}</p>
-                    <p className="grey-text lighten-2">
-                        {moment(project.createdAt.toDate()).calendar()}
+                    <p>
+                        <span className="blue-text text-lighten-3">
+                            {project.authorFirstName[0]}. {project.authorLastName}
+                        </span>
+                        <span> | </span>
+                        <span className="grey-text text-lighten-1">
+                            {moment(project.createdAt.toDate()).calendar()}
+                        </span>
                     </p>
+
                 </div>
             </div>
         </div>
