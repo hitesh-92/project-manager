@@ -6,12 +6,10 @@ export const addMessage = (message) => {
         const profile = getState().firebase.profile
         const authorId = getState().firebase.auth.uid
 
-        console.log('actions::::',message)
-
         firestore
             .collection('messages')
             .add({
-                message: message,
+                ...message,
                 authorFirstName: profile.firstName,
                 authorLastName: profile.lastName,
                 authorId: authorId,
