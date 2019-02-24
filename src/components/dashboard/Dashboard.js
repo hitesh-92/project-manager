@@ -8,11 +8,14 @@ import {compose} from 'redux'
 import {Redirect} from 'react-router-dom'
  
 class Dashboard extends Component {
+    
     render(){
         
         const {projects, auth, notifications, messages} = this.props
 
         if (!auth.uid) return <Redirect to="/signin"/>
+
+        // console.log(this.props)
 
         return(
             <div className="dashboard" id="dashboard">

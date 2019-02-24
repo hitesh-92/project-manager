@@ -25,13 +25,14 @@ body {
   padding:0
 }
 
-form{
-  padding: 20px;
-  margin-top:20px;
-}
-
 form button, form h5{
   margin: 20px 5px;
+}
+
+.signIn-desc, form{
+  padding: 20px;
+  margin-top: 20px;
+  border: 5px solid rgb(236, 236, 236);
 }
 
 #nav-title{
@@ -55,6 +56,14 @@ form button, form h5{
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.signIn-body{
+  background: #c3c9c888;
+}
+
+.signIn-body-text{
+  font-size: 1.2rem;
 }
 
 #footer a:hover{

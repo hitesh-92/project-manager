@@ -18,19 +18,23 @@ class ProjectDetails extends Component{
     const {project, auth} = this.props
     if (!auth.uid) return <Redirect to="/signin"/>
 
+    // console.log(this.props)
+
+    const id = this.props.match.params.id
+
     if(project){
 
       return (
   
         <div id="project-details">
   
-          <section className="section">
+          {/* <section className="section">
             
             <div className="row">
               <div className="col s2 white-text">
                 <p>Project Details</p>
               </div>
-              <div className="col s10 ">
+              <div className="col s10">
                 <div className="card">
                   <div className="card-content">
                   <span className="card-title center">{project.title}</span>
@@ -46,11 +50,40 @@ class ProjectDetails extends Component{
                 </div>
               </div>
             </div>
+          </section> */}
+
+          <section className="section">
+
+            <div className="row green lighten-3">
+
+              <div className="col s12 m2">
+                <p>Project Details</p>
+              </div>
+
+              <div className="col s12 m7">
+                <p>
+                  <span>{project.title}</span>
+                  <span className="white-text"> : </span>
+                  <span><small>{project.content}</small></span>
+                </p>
+              </div>
+
+              <div className="col s12 m3">
+                <p>
+                  <small className="white-text text-lighten-1">
+                    <span>{project.authorFirstName[0]}. {project.authorLastName} - {moment(project.createdAt.toDate()).format("Do MMM YY") }</span>
+                  </small>
+                </p>
+              </div>
+
+            </div>
+
           </section>
+
 
       
           <section className="project-detail-tasks">
-            <ProjectTask project={project} />
+            <ProjectTask project={project} id={id} />
           </section>
 
         </div>
