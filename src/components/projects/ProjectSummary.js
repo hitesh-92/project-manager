@@ -3,7 +3,7 @@ import moment from 'moment'
 
 const ProjectSummary = ({project}) => {
     return(
-        <div className="project-list">
+        <div className="project-list hoverable">
             <div className="card z-depth-1 project-summary">
                 <div className="card-content grey-text text-darken-1">
                     

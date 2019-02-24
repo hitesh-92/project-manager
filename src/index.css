@@ -61,10 +61,28 @@ form button, form h5{
   color: rgb(0, 195, 255)
 }
 
+.modal-text{
+  height: 10rem;
+}
+
 #footer .right-content{
   padding-right: 0.5rem;
 }
 
 .project-title{
   text-decoration: underline;
+}
+
+#project-details{
+  background: linear-gradient(rgb(73, 146, 76), #66c2ae);
+  padding-bottom: 10px;
+}
+
+.project-detail-tasks{
+  margin: 0 5px;
+}
+
+.project-detail-task-section{
+  padding: 5px;
+  border-radius: 10px;
 }

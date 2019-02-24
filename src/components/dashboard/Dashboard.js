@@ -17,11 +17,11 @@ class Dashboard extends Component {
         return(
             <div className="dashboard" id="dashboard">
                  <div className="row">
-                    <div className="col sm12 m6">
+                    <div className="col s12 m6">
                         <Notifications notifications={notifications} />
                         <Messages messages={messages} />
                     </div>
-                    <div className="col sm12 m6">
+                    <div className="col s12 m6">
                         <ProjectList projects={projects} />
                     </div>
                  </div>

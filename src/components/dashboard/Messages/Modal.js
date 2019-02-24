@@ -27,16 +27,16 @@ class Modal extends Component {
   componentDidMount() {
     const options = {
       onOpenStart: () => {
-        console.log("Open Start");
+        // console.log("Open Start");
       },
       onOpenEnd: () => {
-        console.log("Open End");
+        // console.log("Open End");
       },
       onCloseStart: () => {
-        console.log("Close Start");
+        // console.log("Close Start");
       },
       onCloseEnd: () => {
-        console.log("Close End");
+        // console.log("Close End");
       },
       inDuration: 250,
       outDuration: 250,
@@ -73,7 +73,7 @@ class Modal extends Component {
 
               <h5 className="green-text text-darken-3">Post Message</h5>
 
-              <textarea name="message" id="message" onChange={this.handleChange}>
+              <textarea className="modal-text" name="message" id="message" onChange={this.handleChange} placeholder="Keep It Simple Stupid">
               </textarea>
 
               <div className="input-field">
