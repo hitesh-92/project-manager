@@ -85,4 +85,10 @@ form button, form h5{
 .project-detail-task-section{
   padding: 5px;
   border-radius: 10px;
+  /* border: 1px solid white; */
+  /* box-shadow: 0 0 1px 1px rgb(133, 133, 133); */
+}
+
+#project-task{
+  min-height: 50vh;
 }
