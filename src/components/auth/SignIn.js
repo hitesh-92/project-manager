@@ -41,7 +41,7 @@ class SignIn extends Component {
                     <p className="white-text text-darken-1 signIn-body-text">
                         A goal without a plan is just a dream
                     <br/>
-                        So layout your steps to succeed
+                        So layout your steps to success
                     <br/>
                         No matter how big or small
                     <br/>

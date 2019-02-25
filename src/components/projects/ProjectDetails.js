@@ -27,30 +27,6 @@ class ProjectDetails extends Component{
       return (
   
         <div id="project-details">
-  
-          {/* <section className="section">
-            
-            <div className="row">
-              <div className="col s2 white-text">
-                <p>Project Details</p>
-              </div>
-              <div className="col s10">
-                <div className="card">
-                  <div className="card-content">
-                  <span className="card-title center">{project.title}</span>
-                  <span>
-                    <blockquote className="">{project.content}</blockquote>
-                  </span>
-                  <div className="right">
-                    <small className="grey-text text-lighten-1">
-                    <span>{project.authorFirstName[0]}. {project.authorLastName} - {moment(project.createdAt.toDate()).format("MMM Do YY") }</span>
-                    </small>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
 
           <section className="section">
 

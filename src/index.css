@@ -91,13 +91,31 @@ form button, form h5{
   margin: 0 5px;
 }
 
-.project-detail-task-section{
-  padding: 5px;
-  border-radius: 10px;
-  /* border: 1px solid white; */
-  /* box-shadow: 0 0 1px 1px rgb(133, 133, 133); */
-}
-
 #project-task{
   min-height: 50vh;
+  /* border: 1px solid red; */
+}
+
+.project-task{
+  padding: 0;
+  margin: 0;
+  width: 95%;
+  
+}
+
+.project-detail-task-section{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.task-content{
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.task-item{
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px #ccc;
 }
